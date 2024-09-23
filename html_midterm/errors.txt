@@ -1,0 +1,47 @@
+Annabella Arreola, Xan Orchid, Apoorva Maddhi
+
+Find_errors.html
+
+Line 1: <!DOCTYPE html> should be the first line before <html>
+Line 4: should be <html lang=”en”> not <html language=”en”>
+Line 4: <html lang="en"> should be after <!DOCTYPE html> not after <head>
+Line 7: there needs to be a closing head tag (</head>) after the <title> element and before the <body> element 
+Line 9: there needs to be a closing heading 1 tag (</h1>) after the “Welcome to my error-filled page” heading
+Line 11: there needs to be an opening paragraph element tag (<p>) before the paragraph text “This is a paragraph”
+Line 19: The closing line item tag at the beginning of the list item needs to be an opening tag instead (<li>)
+Line 24: The closing tag has to be consistent with the list element created at the beginning, which is an ordered list. The end tag must be </ol>
+Line 26: The paragraph element needs a closing tag at the end of “This is another paragraph”. Add </p> afterward. 
+Line 28: The relative path for the image is incorrect. It should be .jpg instead of .png. And the image must not be capitalized in the path.
+Line 28: Within the img element, there should be an “alt=” section and a short description of what the image depicts.
+Line 30: The path to the link should be the absolute path to the website. 
+Line 30: the closing tag for the link element should be </a> not </img>
+Line 39: The closing tag for the table data element should be </td> not <td>
+Line 45: The table element is missing its closing tag (</table>)
+Line 46: The image element should use “src=” instead of “source”
+Line 46: The tag for the image should end in .jpg not .jpeg.
+Line 48: The text is missing a paragraph element. It needs an opening tag (<p>) and a closing tag at the end of the text (</p>)
+Line 50: the (<p) should be (<p>)
+Line 54: Add closing comment tag (-->)
+Line 56: The href does not have a valid link
+Line 58: The emphasis element ending tag should be inside the paragraph element ending tag. (</em></p>)
+Line 61: The descriptive item title should use the tag <dt></dt>
+Line 61: The descriptive item text should use the tag <dd></dd>
+Line 64: The heading tags should be consistent (either h2 or h3 for opening and closing tags)
+
+Find_errors_2.html
+
+Missing <html lang="en">
+Line 2: Header should be after the body tag
+Line 5: Body element opening tag is missing >
+Line 6: Wrong placement of the <html> tag. Should go after DOCTYPE html and before head.
+Line 8: Missing closing </strong> tag after important
+Line 8: Missing </p> tag
+Line 10: Should be <img src> not <img href>
+Line 10: No whitespace is allowed in the file name → should image_2.jpg
+Line 10: Missing <alt> text
+Line 12: Missing opening <h2>
+Line 14: Missing <p> tag
+Line 15: Missing proper comment form...needs to be <!--this is a comment→
+Line 16: Need a closing tag for the body (</body)
+Line 16: Need a closing tag for the div element (</div)
+Line 16: Should be </html>
