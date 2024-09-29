@@ -1,0 +1,132 @@
+/* General page styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+  }
+  
+  /* Styles specific to header and footer of card */
+
+.card footer p {
+    font-size: 1.2em; 
+    line-height: 0.02em;
+    padding-left:0.2em;
+}
+
+.card h2 {
+    font-size: 1.75em;
+    line-height: 1.75em;
+
+}
+
+.card header h2, article p {
+    margin: 0;
+}
+
+.card article {
+    height: 14em;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.card article img {
+    padding-top: 1.5em;
+    height: 11em;
+    max-height: 100%;
+    float: right;
+  }
+
+  .card article p {
+    padding-top: 3em;
+    color: white;
+    padding-left: 0.95em;
+}
+  /* Styles specific to header and footer of card */
+
+  .card footer, header {
+    height: 3.125em;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+/* Styles specific to setup of card container */
+
+.card {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
+
+/*Patrick's Card*/
+
+body, .card2 html {
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+}
+
+  /* Styles specific to header and footer of card */
+
+.card2 footer p {
+    color: red;
+    font-size: 1.2em; 
+    line-height: 0.02em;
+    padding-left:0.2em;
+}
+
+.card2 h2 {
+    color: red;
+    font-size: 1.75em;
+    line-height: 1.75em;
+
+}
+
+.card2 header h2, article p {
+    margin: 0;
+}
+
+.card2 article {
+    height: 14em;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.card2 article img {
+    padding-top: 1.5em;
+    height: 11em;
+    max-height: 100%;
+    float: right;
+  }
+
+  .card2 article p {
+    padding-top: 3em;
+    color: black;
+    padding-left: 0.95em;
+}
+  /* Styles specific to header and footer of card */
+
+  .card2 footer, header {
+    height: 3.125em;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+/* Styles specific to setup of card container */
+
+.card2 {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: whitesmoke;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
