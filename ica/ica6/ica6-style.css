@@ -30,8 +30,6 @@
     color: white;
     text-shadow: 1px 1px 1px black;
     background-image: url("/img/ica6/logo.png");
-    background-size: cover;
-    background-position: center;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
   
