@@ -1,0 +1,45 @@
+
+
+body {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#backimg {
+    size: 100%;
+    position: absolute; 
+    z-index: 0;
+}
+
+#content-boxes {
+    display: grid; 
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 10px 50px auto;
+}
+
+#overlay-team {
+    position: absolute; /* Sit on top of the page content */
+        background-color: black; 
+        color: white;
+        padding: 10px;
+        padding-bottom: 50px;
+        height: 20px;
+        z-index: 1;
+        top: 35px;
+        left: 8px;
+}
+
+#overlay-gametitle {    
+    position: absolute; /* Sit on top of the page content */
+        background-color: rgba(255,255,255,100); 
+        font-size: 10px;
+        padding-top: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+        height: 20px;
+        z-index: 1;
+        top: 5px;
+        left: 8px;
+}
