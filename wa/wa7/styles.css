@@ -21,32 +21,52 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    /* for creating column layout and making columns more narrow when shrunk */
+    display: grid; /* call grid element */
+    grid-template-columns: 1fr 250px; /* 1 fractional unit for article, fixed 250px for aside */
+    gap: 20px; /* space between the columns */
   }
   
+  .feature {
+    width: 200px;
+    /* for the image inside article to have text wrap around it */
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+
   nav {
     background-color: #000;
     padding: .5em;
-    flex-direction: row; 
+    /* for the navigation bar to scroll with content and become sticky at top of viewport when it reaches it */
+    position: -webkit-sticky; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+
   }
   
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    /* to display navigation items in a row with equal space */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   nav a {
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
+    flex-direction: row;
   }
   
   .photos {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-
-  .feature {
-      width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
   }
