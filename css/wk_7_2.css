@@ -1,46 +1,76 @@
+/* 1. start by setting to display:flex 
+    2. add a max/min width to the items
+    3. show how we can change flex direction
+    4. show how we can change wrapping
+    5. show how we can change how we justify and align items (show both vertical and horizontal)
+        a. emphasize how these can be used to easily center content
+    6. show order and flex grow*/
+
 /* ~~~ the section we will change for our class notes to apply flexbox / grid starts here! ~~~ */
 
 /* ~~ this is where we apply flexbox styling ~~ */
-
-/* #my_flexbox{
+#my_flexbox{
     display:flex;
-    flex-direction: column;
-    justify-content: center, flex-start, flex-end, space-around, space-between
-    align items: center, flex-start, flex-end, stretch, baseline
-    flex-wrap: wrap
-    }
-
-.info_card{
-    width:20vw;
-    max-width: 30vw;
-    min-width: 400px;
+    /* flex-direction: column, row, column-reverse or row-reverse; */
+    flex-direction: row;
+    /* flex-wrap: wrap, nowrap, wrap-reverse */
+    flex-wrap: wrap;
+    /* justify-content changes how items are aligned
+        this applies to the *flex direction* */
+    /* justify-content: center, flex-start, flex-end, space-around, or space between */
+    justify-content: center;
+    /* align-items changes how items are aligned
+        this applies to the *opposite of flex direction* */
+    /* align-items: center, flex-start, flex-end, stretch, or baseline (centers items) */
+    /* show them how to easily center items (justify-content:center + align-content:center) */
 }
 
+/* show how to order using order: # property for individual items
+order starts at zero
+
+flex-grow: # is the relative width for each individual item*/
+
 #info_1{
-    flex-grow: .4; or flex-shrink to change size of individual sections
-    order:1; can be negative, 0 or positive
-} */
+    /* for flex-grow to work, items must have a set width */
+    flex-grow: 2;
+    order:1;
+}
 
-
+.info_card{
+    max-width: 30vw;
+    min-width: 300px;
+}
 
 /* ~~ this is where we apply grid styling ~~ */
 
-/* #my_grid{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr; (fr unit = 
+
+/* 1. start by setting display grid
+    2. add grid template columns, then rows, then call out how we have overfilled the grid but it still works
+    3. show fr unit
+    4. show justify content/ align content
+        a. show gap
+    5. jump back over to the ppt to cover grid-column/grid-row then show example here
+    6. jump back over to show grid-area then show example here
+    */
+
+/* note, here we have overfilled the grid,
+    (providing more rows of content than we defined in css)
+    but it keeps tiling following the same pattern by default */
+#my_grid{
+    display:grid;
+    grid-template-columns: auto auto auto auto; /* use fr unit to calculate *relative* widths/heights */
     grid-template-rows: auto auto;
-    justify-content: space-evenly, space-around, space-between, center, start, end (horizontal alignment columns)
-    align-content: cneter, space-evenly, space-around, space-between, start, end (vertical alignment for rows)
-} 
-.unicorns {
-width: 20vw;
-#unicorns_1 {
-grid-column: 1/3; (starting column/ending column)
-grid-row: 1/4;  (starting row/ending row)
-grid-row: span 2; (can also do this and spans 2 rows but can move around freely)
+
+    gap: 20px 50px; /*our row gap is 20px, our column gap is 50px */
+    /* justify content is for horizontal alignment */
+    /* justify content: space-evenly, space-around, space-between, center, start, end */
+
+    /* align-content is for vertical alignment */
+    /* align-content: center, space-evenly, space-around, space-between, start, end */
 }
 
-#unicorns_5 {
-grid-area: 1/2/3/4; (start row/ start column/ start row/ end row)
-grid-area: span 2/ span 3;
-*/
+#unicorns_1{
+    /* grid-row: span 2;
+    grid-column: span 3; */
+    grid-area: span 2/span 4;
+}

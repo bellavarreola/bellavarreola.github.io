@@ -1,0 +1,27 @@
+body {
+    margin:0;
+}
+
+ul{ 
+    list-style-type: none;
+    margin: 0;
+    background-color: black;
+    padding: 10px 0px;
+    height: 30px;
+}
+
+li {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;    
+    padding: 10px 30px; /*top and bottom, left and right */
+}
+
+li a:hover {
+    background-color: darkslategray;
+}

@@ -1,0 +1,53 @@
+@media screen and (max-width: 800px){
+    body{
+        background-color: limegreen;
+
+    }
+    ul { 
+        flex-direction: column;
+    }
+    li a{
+        width: 100vw;
+        padding: 10px 30px;
+    }
+    li a:hover{
+        background-color: red;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    background-color: black;
+    margin: 0;
+    padding: 10px 0px;
+    justify-content: flex-end;
+}
+
+li a{
+    text-decoration: none; 
+    color: white;
+    padding: 10px 30px;
+    /* to add font into CSS */
+    font-family: "Londrina Sketch", sans-serif;
+    /* to add yellow transition of text color pt 1 */
+    transition: color 1s;
+}
+
+li a:hover{
+    background-color: darkslategray
+}
+
+li a:active {
+    background-color: white;
+}
+
+/* to add yellow transition of text color pt 2 */
+li a:hover{
+    background-color: red;
+    color: yellow;
+}
