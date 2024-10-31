@@ -22,21 +22,25 @@ function result() {
   if(customName.value !== '') {
     const name = customName.value;
     replace("Bob", customName)
-
   }
 
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+  if (document.getElementById("uk").checked) {
+    const weight = Math.round(300 * 0.0714286) + ' stone'; // 300 lbs to stone
+    const temperature = Math.round((94 - 32) * 5 / 9) + ' centigrade'; // 94°F to °C
+    newStory = newStory.replace('94 fahrenheit', temperature);
+    newStory = newStory.replace('300 pounds', weight);
   }
-
-  story.textContent = ;
-  story.style.visibility = 'visible';
 
   var newStory = storyText
   var xItem = randomValueFromArray(insertX)
   var yItem = randomValueFromArray(insertY)
   var zItem = randomValueFromArray(insertZ)
 
+  newStory = newStory.replace(':insertx:', xItem)
+  .replace(':inserty:', yItem)
+  .replace(':insertz:', zItem)
+  .replace(':insertx:', xItem);
+                    
+story.textContent = newStory;
+  story.style.visibility = 'visible';
 }
