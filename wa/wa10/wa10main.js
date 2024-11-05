@@ -9,7 +9,7 @@ function randomValueFromArray(array){
 }
 
 // Raw Text Strings //
-var storyText = "It was 102 degrees outside, so :bob: went for a swim. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. :bob: saw the whole thing, but was not surprised — :insertx: weighs 400 pounds, and it was a scorching day.";
+var storyText = "It was 94 fahrenheit outside, so :bob: went for a swim. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. :bob: saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a scorching day.";
 const insertX = ["Benny Beaver", "Sally Sloth", "Willy Walrus"]
 const insertY = ["LegoLand", "Puerta Vallarta", "Illegal Pete's"]
 const insertZ = ["started breakdancing on the sidewalk", "did a backflip into a fountain", "began juggling pineapples"]
