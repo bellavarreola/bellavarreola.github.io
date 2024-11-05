@@ -9,19 +9,20 @@ function randomValueFromArray(array){
 }
 
 // Raw Text Strings //
-var storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day."
-const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"]
-const insertY = ["the soup kitchen", "Disneyland", "the White House"]
-const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"]
-
+var storyText = "It was 102 degrees outside, so :bob: went for a swim. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. :bob: saw the whole thing, but was not surprised — :insertx: weighs 400 pounds, and it was a scorching day.";
+const insertX = ["Benny Beaver", "Sally Sloth", "Willy Walrus"]
+const insertY = ["LegoLand", "Puerta Vallarta", "Illegal Pete's"]
+const insertZ = ["started breakdancing on the sidewalk", "did a backflip into a fountain", "began juggling pineapples"]
 // Event listener and partial function definition // 
 randomize.addEventListener('click', result);
 
 function result() {
+  let newStory = storyText;
 
   if(customName.value !== '') {
     const name = customName.value;
-    replace("Bob", customName)
+    newStory = newStory.replace(":bob:", name);
+    newStory = newStory.replace(":bob:", name);
   }
 
   if (document.getElementById("uk").checked) {
@@ -31,16 +32,15 @@ function result() {
     newStory = newStory.replace('300 pounds', weight);
   }
 
-  var newStory = storyText
-  var xItem = randomValueFromArray(insertX)
-  var yItem = randomValueFromArray(insertY)
-  var zItem = randomValueFromArray(insertZ)
+  var xItem = randomValueFromArray(insertX);
+  var yItem = randomValueFromArray(insertY);
+  var zItem = randomValueFromArray(insertZ);
 
   newStory = newStory.replace(':insertx:', xItem)
-  .replace(':inserty:', yItem)
-  .replace(':insertz:', zItem)
-  .replace(':insertx:', xItem);
+  newStory = newStory.replace(':inserty:', yItem)
+  newStory = newStory.replace(':insertz:', zItem)
+  newStory = newStory.replace(':insertx:', xItem);
                     
-story.textContent = newStory;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }

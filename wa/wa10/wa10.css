@@ -1,6 +1,6 @@
 body {
-    font-family: helvetica, sans-serif;
-    width: 350px;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    width: 500px;
   }
 
   label {
@@ -12,13 +12,25 @@ body {
   }
 
   input[type="text"] {
-    padding: 5px;
+    padding: 10px;
     width: 150px;
   }
 
   p {
-    background: #ffc125;
-    color: #5e2612;
-    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background: navy;
+    color: white;
+    padding: 50px;
     visibility: hidden;
+    border: dashed palevioletred 5px;
+    border-radius: 500px;
+  }
+
+  .randomize {
+    display: flex;
+    justify-content: space-around;
+    color:palevioletred;
+    font-size: 40px;
+    width: 100vw;
   }
