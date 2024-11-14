@@ -1,29 +1,51 @@
-h1 {
-    font-family: helvetica, arial, sans-serif;
-    text-align: center;
-  }
+
+.bodyText {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    border: dashed 3px black; 
+}
   
   body {
     width: 640px;
     margin: 0 auto;
   }
+ 
+#comic {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 250px;
+}
+
+#title {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
   
-  .full-img {
-    position: relative;
-    display: block;
-  }
-  
-  .displayed-img {
-    width: 100%;
-  }
-  
-  button {
-    border: 0; 
-    background: rgba(150,150,150,0.6);
+#date {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+.controls {
+    background: orange;
     text-shadow: 1px 1px 1px white;
     border: 1px solid #999;
     position: absolute;
     cursor: pointer;
-    top: 2px;
-    left: 2px;
+    top: 150px;
+    left: 250px;
+
   }
