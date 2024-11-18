@@ -27,7 +27,7 @@ function fetchData() {
         let y = myData.year;
         console.log(`Date: ${m}/${d}/${y}`);
 
-        document.getElementId("date").innerHTML = (m + "/" + d + "/" + y);  //use innerHTML for strings and use + to add the different parts of date
+        document.getElementById("date").innerHTML = (m + "/" + d + "/" + y);  //use innerHTML for strings and use + to add the different parts of date
     }) //now all data is fetched
 
     .catch(error => {console.log(error)}); // catches errors if the response is rejected
