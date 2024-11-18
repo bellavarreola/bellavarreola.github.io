@@ -25,6 +25,8 @@
 }
 
 #title {
+    display: flex;
+    justify-content: space-around;
     background-color: black;
     color: white;
     position: absolute;
@@ -36,7 +38,7 @@
     background-color: black;
     color: white;
     position: absolute;
-    top: 200px;
+    top: 225px;
     left: 250px;
 }
 .controls {
