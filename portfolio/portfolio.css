@@ -1,0 +1,26 @@
+nav {
+    background-color: #A71d31;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.navbar a {
+    color: #F1F0CC;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #3F0D12;
+}
