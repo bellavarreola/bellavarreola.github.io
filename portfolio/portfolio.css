@@ -1,26 +1,26 @@
-nav {
-    background-color: #A71d31;
+#projects{
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 20vw;
 }
 
-.navbar {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    list-style-type: none;
-    padding: 10px;
-    margin: 0;
-}
-
-.navbar li {
-    text-align: center;
-}
-
-.navbar a {
-    color: #F1F0CC;
+.projects a{ /*gets rid or underlined links*/
     text-decoration: none;
-    padding: 15px;
-    display: block;
+    color: black;
 }
 
-.navbar a:hover {
-    background-color: #3F0D12;
+.projects a:hover{ /*adds background hover color to indicate link*/
+    background-color: blanchedalmond;
 }
+.project{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 15px 20px;
+}
+
+.project img{
+    width: 10vw;
+}
+
