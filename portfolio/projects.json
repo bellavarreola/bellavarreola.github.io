@@ -1,7 +1,7 @@
 {
 	"projects": [{
 			"name": "Together Apart",
-			"subdomain": "together_apart",
+			"subdomain": "together_apart", 
 			"category": ["tangible", "networked", "participatory", "publication", "lead", "methods"],
 			"subtitle": "Co-Designing A Robot Interface for Remote Co-Design",
 			"collaborators": ["Kaiwen Sun", "Zahra Dhuliawala", "Fumi Tsukiyama", "Iva Matkovic", "Anastasia Wolf", "Zihao (Leo) Zhang", "Priyanka Balasubramaniyam", "Zach Schwemler", "Allison Druin", "Jason Yip", "Amanda Huynh", "Daniel Leithinger"],

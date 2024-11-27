@@ -4,14 +4,15 @@
     margin: 10vh 20vw;
 }
 
-.projects a{ /*gets rid or underlined links*/
+#projects a{ /*gets rid or underlined links*/
     text-decoration: none;
     color: black;
 }
 
-.projects a:hover{ /*adds background hover color to indicate link*/
-    background-color: blanchedalmond;
+.project:hover{ /*adds background hover color to indicate link*/
+    background-color: rgb(209, 222, 127);
 }
+
 .project{
     display: flex;
     flex-direction: row;
@@ -24,3 +25,13 @@
     width: 10vw;
 }
 
+/*button display */
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button{ /*buttons = div id from HTML*/
+    margin: 10px;
+}
