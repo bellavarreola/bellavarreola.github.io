@@ -1,6 +1,6 @@
 {
 	"projects": [{
-			"name": "Together Apart",
+			"name": "Videography",
 			"subdomain": "together_apart", 
 			"category": ["tangible", "networked", "participatory", "publication", "lead", "methods"],
 			"subtitle": "Co-Designing A Robot Interface for Remote Co-Design",
@@ -13,7 +13,7 @@
 			"published": ["True","1"],
 			"citations": [["Casey Lee Hunt, Kaiwen Sun, Zahra Dhuliawala, Fumi Tsukiyama, Iva Matkovic, Zachary Schwemler, Anastasia Wolf, Zihao Zhang, Allison Druin, Amanda Huynh, Daniel Leithinger, and Jason Yip. 2023. <span>Designing Together, Miles Apart: A Longitudinal Tabletop Telepresence Adventure in Online Co-Design with Children</span>. In Proceedings of the 22nd Annual ACM Interaction Design and Children Conference (IDC '23). Association for Computing Machinery, New York, NY, USA, 52–67.", "https://caseyhunt.github.io/assets/idc23-8_3.pdf", "View on ACM", "https://dl-acm-org.colorado.idm.oclc.org/doi/10.1145/3585088.3589359"]]
 			
-	},{"name": "TactorBots",
+	},{"name": "Photography",
 			"subdomain": "tactorbots",
 			"category": ["tangible", "networked", "participatory", "toolkit", "shape_change", "publication", "award", "support"],
 			"subtitle": "A Haptic Design Toolkit for Out-of-lab Exploration of Emotional Robotic Touch",
@@ -29,7 +29,7 @@
 			"citations": [["Ran Zhou, Zachary Schwemler, Akshay Baweja, Harpreet Sareen, Casey Lee Hunt, and Daniel Leithinger. 2023. <span>TactorBots: A Haptic Design Toolkit for Out-of-lab Exploration of Emotional Robotic Touch.</span> In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI '23). Association for Computing Machinery, New York, NY, USA, Article 370, 1–19.", "https://caseyhunt.github.io/assets/chi-23.pdf", "View on ACM", "https://dl-acm-org.colorado.idm.oclc.org/doi/abs/10.1145/3544548.3580799"]]
 
 	},{
-			"name": "Designing Sensory Extensions for Interactive Simulations",
+			"name": "Design",
 			"subdomain": "ratio_and_proportion",
 			"category": ["tangible", "participatory", "educational", "publication", "lead", "education"],
 			"subtitle": "Investigating Sensory Extensions as Input for an Interactive Math Simulation",
@@ -44,7 +44,7 @@
 			"citations": [["Chris Hill, Casey Lee Hunt, Sammie Crowder, Brett Fiedler, Emily B. Moore, and Ann Eisenberg. 2023. <span>Investigating Sensory Extensions as Input for Interactive Simulations</span>. In Proceedings of the Seventeenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '23). Association for Computing Machinery, New York, NY, USA, Article 39, 1–7.", "https://caseyhunt.github.io/assets/tei-23.pdf", "View on ACM", "https://dl-acm-org.colorado.idm.oclc.org/doi/abs/10.1145/3569009.3573108"]]
 
 		},{
-			"name": "Cyber Garden",
+			"name": "Drone",
 			"subdomain": "cyber_garden",
 			"category": ["tangible", "participatory", "lead"],
 			"subtitle": "Ambient Community Wellness Display ",
