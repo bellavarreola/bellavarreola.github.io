@@ -1,27 +1,30 @@
+/* Global Styles */
 body {
     font-family: 'avory-i-pe-variable', 'Times New Roman', Times, serif;
     font-style: normal;
     font-variation-settings: "wght" 500;  
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
 }
 
-#projects{
+/* Header Section */
+#projects {
     display: flex;
     flex-direction: column;
     margin: 10vh 20vw;
 }
 
-#projects a{ /*gets rid or underlined links*/
+#projects a {
     text-decoration: none;
     color: black;
 }
 
-.project:hover{ /*adds background hover color to indicate link*/
+.project:hover {
     background-color: rgb(209, 222, 127);
 }
 
-.project{
+.project {
     display: flex;
     flex-direction: row;
     border: 1px solid black;
@@ -29,42 +32,40 @@ body {
     padding: 15px 20px;
 }
 
-.project img{
+.project img {
     width: 10vw;
 }
 
+/* Footer */
 footer {
     text-align: center;
     background-color: #1f3322;
-    position: relative;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    bottom: 0;
+    padding: 10px 0;
+    color: #fffded;
     width: 100%;
-    color:#fffded;
+    position: relative;
+    bottom: 0;
 }
 
-/*button display */
-
-#buttons{
+/* Button Container */
+#buttons {
     display: flex;
     justify-content: center;
 }
 
-#buttons button{ /*buttons = div id from HTML*/
+#buttons button {
     margin: 10px;
 }
 
-/* About section */
+/* About Section */
 .blurb {
     background-color: #fffded;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    padding: 60px; /* Remove any padding */
-    margin: 0; /* Remove any margin */
+    padding: 60px;
+    margin: 0;
     color: #0e0151;
 }
 
@@ -74,38 +75,36 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh; /* Full height for the section */
+    height: 90vh;
     position: relative;
-    padding: 0; /* Remove any padding */
-    margin: 0; /* Remove any margin */
+    padding: 0;
 }
 
 .greeting {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%; /* Occupies half of the width */
-    height: 55%; /* Matches height of the section */
+    width: 20%;
+    height: 55%;
     color: #fffded;
-    margin: 0; /* No margin needed */
     font-size: 20px;
-    box-sizing: border-box; /* Includes padding/borders in dimensions */
+    box-sizing: border-box;
 }
 
 .headshot {
-    width: 30%; /* Occupies the other half of the section */
-    height: 90%; /* Matches height of the greeting box */
+    width: 30%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Ensures image doesn't overflow the box */
+    overflow: hidden;
 }
 
 .headshot img {
     width: 72%;
     height: 45%;
     border: 2px solid #fffded;
-    object-fit: cover; /* Ensures the image covers the box proportionally */
+    object-fit: cover;
 }
 
 .logo {
@@ -114,16 +113,15 @@ footer {
    left: 20px;
    width: 100px;
    height: auto;
-
 }
 
-/* Tiles section */
+/* Tiles Section */
 #tiles {
     display: flex;
-    margin: 0; /* Remove default margin */
+    margin: 0;
     padding: 0;
-    width: 100vw; /* Full width of the viewport */
-    height: 60vh; /* Optional: Full height of the viewport */
+    width: 100vw;
+    height: 60vh;
 }
 
 a {
@@ -133,14 +131,14 @@ a {
 }
 
 .tile {
-    flex: 1; /* Equal width for all tiles */
+    flex: 1;
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 100%; /* Fill the height of the container */
+    height: 100%;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth background transition */
-    border: none; /* Remove gaps caused by borders */
+    transition: background-color 0.3s ease;
+    border: none;
 }
 
 .tile::before {
@@ -155,7 +153,7 @@ a {
     transition: opacity 0.3s ease;
 }
 
-/* Different hover colors for each tile */
+/* Tile Specific Hover Colors */
 .videography::before {
     background-color: #0e0151;
 }
@@ -169,7 +167,7 @@ a {
 }
 
 .tile:hover::before {
-    opacity: 1; /* Make the solid color visible */
+    opacity: 1;
 }
 
 .tile h2 {
@@ -187,8 +185,5 @@ a {
 }
 
 .tile:hover h2 {
-    opacity: 1; /* Reveal text */
+    opacity: 1;
 }
-
-
-
