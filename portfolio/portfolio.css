@@ -44,7 +44,18 @@ body {
     margin: 10px;
 }
 
-/* greeting section */
+/* About section */
+.blurb {
+    background-color: #fffded;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 60px; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    color: #0e0151;
+}
 
 /* Landing Section */
 #landing {
