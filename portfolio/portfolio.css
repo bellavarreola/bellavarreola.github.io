@@ -33,6 +33,17 @@ body {
     width: 10vw;
 }
 
+footer {
+    text-align: center;
+    background-color: #1f3322;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    bottom: 0;
+    width: 100%;
+    color:#fffded;
+}
+
 /*button display */
 
 #buttons{
@@ -113,6 +124,12 @@ body {
     padding: 0;
     width: 100vw; /* Full width of the viewport */
     height: 60vh; /* Optional: Full height of the viewport */
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .tile {
