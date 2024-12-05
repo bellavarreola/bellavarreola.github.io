@@ -44,31 +44,52 @@ body {
     margin: 10px;
 }
 
-/* about section */
+/* greeting section */
 
-#about {
-    background-color: #0e0151;
+/* Landing Section */
+#landing {
+    background-color: #1f3322;
     display: flex;
-    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* Full height for the section */
     position: relative;
-
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
 }
+
 .greeting {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fffded;
-    width: 75vw;
-    color: #0e0151;
-    margin: auto;
-    border-radius: 5px;
+    width: 20%; /* Occupies half of the width */
+    height: 55%; /* Matches height of the section */
+    color: #fffded;
+    margin: 0; /* No margin needed */
     font-size: 20px;
+    box-sizing: border-box; /* Includes padding/borders in dimensions */
+}
+
+.headshot {
+    width: 30%; /* Occupies the other half of the section */
+    height: 90%; /* Matches height of the greeting box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures image doesn't overflow the box */
+}
+
+.headshot img {
+    width: 72%;
+    height: 45%;
+    border: 2px solid #fffded;
+    object-fit: cover; /* Ensures the image covers the box proportionally */
 }
 
 .logo {
    position: absolute;
-   top: 10px;
-   left: 10px;
+   top: 20px;
+   left: 20px;
    width: 100px;
    height: auto;
 
