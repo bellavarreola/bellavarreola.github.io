@@ -294,3 +294,21 @@ footer {
     background-color: #1f3322;  
   }
   
+
+/* CSS for Videography page */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.video-element {
+    width: 100%; /* Adjust the width if needed */
+    max-width: 640px; /* Set a reasonable max-width to prevent videos from becoming too large */
+    height: auto; /* Adjust height based on video aspect ratio */
+    margin: 10px 0; /* Optional: Add spacing around the video */
+    background-color: black; /* Optional: Background color while video is loading */
+}
