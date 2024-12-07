@@ -10,14 +10,13 @@ fetch('../portfolio/projects.json')
         console.log(`error ${err}`);
     })
     portfolio/images/cover/cover1.jpg
-function parseData(data){
+function parseData(data){ //to return "name" from JSON//
     for(let i=0; i<data.projects.length; i++){
     document.getElementById("projects").innerHTML += `<a href="/portfolio/${data.projects[i].subdomain}.html">
     <div class="tile ${data.projects[i].subtitle}" id="${data.projects[i].subdomain}">
         <div class="projimg"><img src="/portfolio/images/cover/cover${i +1}.jpg"></div>
         <div class="title">
-        <h2>${data.projects[i].name}<h2>
-        <p class="subtitle">${data.projects[i].subtitle}</p>
+        <h2>${data.projects[i].name}</h2> 
         <p>${data.projects[i].abstract}</p></div></div>`;
     }
 }

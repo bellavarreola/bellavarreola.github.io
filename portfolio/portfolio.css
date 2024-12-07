@@ -88,142 +88,209 @@ footer {
    height: auto;
 }
 
+/* Global Styles */
+body {
+    font-family: 'avory-i-pe-variable', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variation-settings: "wght" 500;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1f3322;
+    padding: 10px 0;
+    color: #fffded;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Button Container */
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button {
+    margin: 10px;
+}
+
+/* About Section */
+.blurb {
+    background-color: #fffded;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    margin: 0;
+    color: #0e0151;
+}
+
+/* Landing Section */
+#landing {
+    background-color: #1f3322;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+    padding: 0;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 55%;
+    color: #fffded;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.headshot {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.headshot img {
+    width: 72%;
+    height: 45%;
+    border: 2px solid #fffded;
+    object-fit: cover;
+}
+
+.logo {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   width: 100px;
+   height: auto;
+}
 
 /* Projects Section */
 #projects {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping if the screen gets too small */
-    justify-content: space-evenly; /* Ensures equal spacing between tiles */
-    margin: 0 auto; /* Centers the container */
-    padding: 20px;
-    gap: 10px; /* Adds spacing between tiles */
-    width: 90vw; /* Optional: Set width of the projects container */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    gap: 0px; 
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
 }
 
 /* Individual Tile */
 .tile {
-    position: relative; /* Ensures child elements are positioned relative to the tile */
-    flex: 1 1 calc(30% - 20px);
-    max-width: 30%;
-    box-sizing: border-box;
     display: flex;
-    align-items: center; /* Align children vertically */
-    justify-content: center; /* Center children horizontally */
-    overflow: hidden; /* Ensures content stays within bounds */
-    background-color: #f5f5f5; /* Tile background color */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width */
+    height: 50%; /* Full height */
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    overflow: hidden; /* Prevent overflow */
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile img {
+    width: 100%; /* Fill the tile width */
+    height: 100%; /* Fill the tile height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition: transform 0.3s ease;
 }
 
 .tile:hover {
     transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-.tile img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop if needed */
-    transition: opacity 0.3s ease; /* Smooth fade effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 .tile:hover img {
-    opacity: 0.3; /* Dim the image on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
-/* Title Styling */
 .tile .title {
-    position: absolute; /* Overlay the title over the tile */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the title */
-    font-size: 24px;
-    font-weight: bold;
-    color: white; /* Title text color */
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
     text-align: center;
     opacity: 0; /* Hidden by default */
-    z-index: 2; /* Ensure it appears above other elements */
-    transition: opacity 0.3s ease; /* Smooth fade effect */
+    transition: opacity 0.3s ease;
 }
 
-/* Reveal Title on Hover */
 .tile:hover .title {
-    opacity: 1; /* Make the title visible */
+    opacity: 1; /* Reveal the title on hover */
 }
 
-
-/* Image within Tile */
-.tile img {
-    width: 100%; /* Full width of the tile */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 5px; /* Optional: Rounded corners for images */
-    object-fit: cover; /* Ensures the image fits the container */
-    transition: opacity 0.3s ease; /* Smooth fade for hover effect */
+/* For photography cover photo */
+.tile.photography img {
+    width: 140%;
+   
 }
-
-/* Hover Effect: Solid Color Overlay */
-.tile:hover img {
-    opacity: 0; /* Fade the image */
-}
-
-.tile::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ff7f50; /* Default hover color (Coral) */
-    opacity: 0; /* Invisible by default */
-    z-index: 1;
-    transition: opacity 0.3s ease; /* Smooth transition */
-}
-
-.tile:hover::before {
-    opacity: 1; /* Reveal the solid color box */
-}
-
-/* Title and Text */
-.tile .title {
-    text-align: center;
-    z-index: 2; /* Ensures it appears above the hover effect */
-}
-
-.tile h2 {
-    font-size: 18px;
-    color: #333;
-    margin: 10px 0 5px 0;
-    z-index: 2; /* Ensures it appears above the hover effect */
-}
-
-.tile p {
-    font-size: 14px;
-    color: #666;
-    margin: 5px 0;
-    z-index: 2; /* Ensures it appears above the hover effect */
-}
-
-.tile.videography::before {
-    background-color: #0e0151; 
-}
-
-.tile.photography::before {
-    background-color: #760404;
-}
-
-.tile.design::before {
-    background-color: #1f3322;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+    #projects {
+        grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    }
+
     .tile {
-        flex: 1 1 calc(50% - 20px); /* Adjust tiles to take half the width on smaller screens */
+        flex-direction: column; /* Stack tiles vertically */
+        height: auto; /* Adjust height for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
+    #projects {
+        grid-template-columns: 1fr; /* One column per row */
+    }
+
     .tile {
-        flex: 1 1 100%; /* Tiles take full width on very small screens */
+        flex-direction: column; /* Stack tiles vertically */
+        height: auto; /* Adjust height for very small screens */
     }
 }
+ 
+    
+  .tile::before {  
+    content: '';  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    background-color: #ff7f50; /* Default hover color (Coral) */  
+    opacity: 0; /* Invisible by default */  
+    z-index: 1;  
+    transition: opacity 0.3s ease; /* Smooth transition */  
+  }  
+    
+  .tile:hover::before {  
+    opacity: 1; /* Reveal the solid color box */  
+  }  
+    
+  .tile.videography::before {  
+    background-color: #0e0151;  
+  }  
+    
+  .tile.photography::before {  
+    background-color: #760404;  
+  }  
+    
+  .tile.design::before {  
+    background-color: #1f3322;  
+  }
+  
