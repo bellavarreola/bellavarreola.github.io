@@ -30,23 +30,4 @@ function buildPage(project) {
   parseData(project); // Add this line to parse data for videos
 }
 
-function parseData(project) {
-  let projectSection = document.getElementById("project");
 
-  project.videos.forEach(video => {
-    let videoDiv = document.createElement('div');
-    videoDiv.className = 'video-container';
-
-    let videoTitle = document.createElement('h2');
-    videoTitle.textContent = video.title;
-    videoDiv.appendChild(videoTitle);
-
-    let videoElement = document.createElement('video');
-    videoElement.src = video.src;
-    videoElement.controls = true;
-    videoElement.className = 'video-element';
-    videoDiv.appendChild(videoElement);
-
-    projectSection.appendChild(videoDiv);
-  });
-}

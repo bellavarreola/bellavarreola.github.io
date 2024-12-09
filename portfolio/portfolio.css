@@ -295,20 +295,26 @@ footer {
   }
   
 
-/* CSS for Videography page */
-.video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
+/* CSS for Videography Page */
+
+/* Container to maintain aspect ratio and fit video */
+.projvid {
+    display: inline-block; /* Align videos horizontally if needed */
+    position: relative; /* For responsive positioning */
+    overflow: hidden; /* Remove unwanted overflow */
+    background-color: transparent; /* Optional: adjust as needed */
+    max-width: 100%; /* Ensure responsive scaling */
+    text-align: center; /* Center align if needed */
 }
 
-.video-element {
-    width: 100%; /* Adjust the width if needed */
-    max-width: 640px; /* Set a reasonable max-width to prevent videos from becoming too large */
-    height: auto; /* Adjust height based on video aspect ratio */
-    margin: 10px 0; /* Optional: Add spacing around the video */
-    background-color: black; /* Optional: Background color while video is loading */
+/* Style the video itself */
+.projvid video {
+    display: block; /* Remove extra padding/margin */
+    width: auto; /* Maintain natural width */
+    height: auto; /* Maintain natural height */
+    max-width: 100%; /* Responsiveness */
+    max-height: 100%; /* Fit within container */
+    object-fit: cover; /* Adjust to fill the space */
+    margin: auto; /* Center the video */
+    background-color: black; /* Optional: visually appealing background */
 }
