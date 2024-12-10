@@ -1,11 +1,23 @@
 /* Global Styles */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in width calculations */
+    overflow-x: hidden;
+    background-color: #f0ebd8; /* Background color */
+}
+
 body {
+    
     font-family: 'avory-i-pe-variable', 'Times New Roman', Times, serif;
     font-style: normal;
     font-variation-settings: "wght" 500;  
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+    background-color: #f0ebd8;
 }
 
 /* CSS For Home Page */
@@ -14,7 +26,7 @@ footer {
     text-align: center;
     background-color: #1f3322;
     padding: 10px 0;
-    color: #fffded;
+    color: #EEF4ED;
     width: 100%;
     bottom: 0;
     align-items: flex-end;
@@ -32,14 +44,14 @@ footer {
 
 /* About Section */
 .blurb {
-    background-color: #fffded;
+    background-color: #f0ebd8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 60px;
     margin: 0;
-    color: #0e0151;
+    color: #0B2545;
 }
 
 /* Landing Section */
@@ -59,7 +71,7 @@ footer {
     justify-content: center;
     width: 20%;
     height: 55%;
-    color: #fffded;
+    color: #f0ebd8;
     font-size: 20px;
     box-sizing: border-box;
 }
@@ -76,7 +88,7 @@ footer {
 .headshot img {
     width: 72%;
     height: 45%;
-    border: 2px solid #fffded;
+    border: 2px solid #f0ebd8;
     object-fit: cover;
 }
 
@@ -101,7 +113,9 @@ footer {
 
 
 /* Projects Section */
-
+#projects {
+    background-color: #f0ebd8;
+}
 .tile {
     display: flex; /* Use Flexbox for layout */
     justify-content: flex-start; /* Distribute tiles evenly */
@@ -212,15 +226,15 @@ footer {
   }  
     
   .tile.videography::before {  
-    background-color: #0e0151;  
+    background-color: #061a40;  
   }  
     
   .tile.photography::before {  
-    background-color: #760404;  
+    background-color: #134074;  
   }  
     
   .tile.design::before {  
-    background-color: #1f3322;  
+    background-color: #748cab;  
   }
   
 
@@ -293,19 +307,22 @@ footer {
 /* video tiles */
  
 .description {
-    background-color: #EEF4ED; 
+    display: flex;
+    justify-content: center;
+    background-color: #f0ebd8; 
     padding: 20px;
-    border-radius: 5px;
     margin-bottom: 20px; /* Space below the description */
     text-align: center;
+    border: 3px #061a40;
 }
 
 .description p {
     font-size: 1rem;
     color: #0B2545;
     line-height: 1.5;
-    margin: 0;
+    margin: 100px;
     max-width: 90%; /* Limit text width for readability */
+    border: 3px #061a40;
 }
 
 .carousel {
@@ -321,6 +338,7 @@ footer {
     background-color:#061a40;
     padding: 60px;
     border-radius: 20px; 
+    border: 10px solid #8DA9C4;
 }
 
 .video_tiles h3 {
@@ -334,16 +352,19 @@ footer {
 }
  
 .video_tiles p {
-    margin-top: 50px;
+    margin-top: 150px;
     font-size: 0.9em;
-    color: #666;
+    color: #8DA9C4;
 }
 
 .bg-blue {
-    background-color:#8DA9C4;
+    background-color:#0e0151;
 }
 
 .bg-green {
     background-color:#1f3322;
 }
 
+#videography {
+    background-color: #f0ebd8;
+}

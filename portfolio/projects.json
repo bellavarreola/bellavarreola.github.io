@@ -10,32 +10,43 @@
 			"title": "Fall Things to do in Boulder",
 			"src": "https://player.vimeo.com/video/1037690564?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
 			"video": true,
-			"vid_description": "Video romantacizing the fall season in Boulder."
-		  },
+			"vid_description": "Video romantacizing the fall season in Boulder.",
+			"colorClass": "bg-blue"
+		},
 		  {
 			"title": "Wes Anderson",
 			"src": "https://player.vimeo.com/video/1037690579?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-			"video": true
+			"video": true,
+			"vid_description": "Annabella's attempt at showcasing campus through the eye of director Wes Anderson. She emphasizes his attention to symmetry and similar cinematic shots. She also used a similar preset to potray a similar vibe.",
+			"colorClass": "bg-red"
 		  },
 		  {
 			"title": "Life at CU",
 			"src": "https://player.vimeo.com/video/1037690595?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-			"video": true
+			"video": true,
+			"vid_description": "Hype video to advertise what your life at CU may look like. Meant to attract incoming freshmen.",
+			"colorClass": "bg-green"
 		  },
 		  {
 			"title": "Small Town called Boulder",
 			"src": "https://player.vimeo.com/video/1037690611?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-			"video": true
+			"video": true,
+			"vid_description": "Annabella having fun with a trending audio and giving it her own twist.",
+			"colorClass": "bg-blue"
 		  },
 		  {
 			"title": "Places to Eat on the Hill",
 			"src": "https://player.vimeo.com/video/1037690630?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-			"video": true
+			"video": true,
+			"vid_description": "This is an example of an interview-type video. Annabella would often make these kinds of videos for the university highlighting a variety of questions.",
+			"colorClass": "bg-red"
 		  },
 		  {
 			"title": "Human first, student second",
 			"src": "https://player.vimeo.com/video/1037690654?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-			"video": true
+			"video": true,
+			"vid_description": "Video highlighting places on Pearl Street while portraying a thoughtful message to students during finals week.",
+			"colorClass": "bg-green"
 		  }
 
 		]
