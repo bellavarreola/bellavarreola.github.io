@@ -373,3 +373,33 @@ footer {
 
 /* CSS FOR PHOTO PAGE */
 
+.photo-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-tile {
+    width: 200px;
+    text-align: center;
+}
+
+.photo-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-tile h3 {
+    color: red;
+} 
+
+.photo-tile p {
+    color: red;
+}
+
+.photo-tiles h2 {
+    color: red;
+}

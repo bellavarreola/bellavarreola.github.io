@@ -54,16 +54,56 @@
 	  {
 		"name": "Photography",
 		"subtitle": "photography",
-		"description": ["Psychological research has found that humans convey specific emotions (e.g., anger, fear, happiness) using social touch patterns, like squeezing a friend's arm when we are afraid."],
+		"description": ["From football games to cars, Annabella collects photos from a variety of university events and self-interests."],
 		"sections": [
-		  {
-			"title": "Athletics",
-			"imageCount": 9,
-			"category": ["tangible", "networked", "participatory", "toolkit", "shape_change", "publication", "award", "support"],
-			"photo_description": "Video highlighting places on Pearl Street while portraying a thoughtful message to students during finals week."
-		  }
-		]
-	  },
+			{
+				"title": "Athletics",
+				"images": [
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics1.jpg",
+					"title": "'Get Hype'",
+					"description": "Travis Jay raising arms, attempting to get the stadium crowd excited."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics2.jpg",
+					"title": "'Dynamic Duo'",
+					"description": "Travis Hunter celebrating with Shedeur Sanders after touchdown."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics3.jpg",
+					"title": "'Two's Up'",
+					"description": "Shedeur Sanders holding up his number after completing a touchdown."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics4.jpg",
+					"title": "'Side Profile'",
+					"description": "Shedeur Sanders looking to the side."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics5.jpg",
+					"title": "'Game Face'",
+					"description": "Shedeur Sanders showing his focused game-face."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics6.jpg",
+					"title": "'Hunter Embrace'",
+					"description": "Travis Hunter hugging loved ones in stands after win."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics7.jpg",
+					"title": "'Sko Buffs'",
+					"description": "Cheerleader getting the crowd excited for the game."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics8.jpg",
+					"title": "'Flag Wave'",
+					"description": "Ralphie Runner waving the CU flag at field corner."
+				  }
+				],
+				"category": ["althetics"]
+			  }
+			]
+		  },
 	  {
 		"name": "Design",
 		"category": ["tangible", "participatory", "educational", "publication", "lead", "education"],

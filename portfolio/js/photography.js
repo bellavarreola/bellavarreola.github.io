@@ -1,13 +1,23 @@
-function renderPhotography(data) {
+fetch('../portfolio/projects.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // For debugging
+        renderProjects(data);
+        setupCarousel(); // Assuming setupCarousel is defined elsewhere
+    })
+    .catch(err => {
+        console.error(`Error fetching JSON: ${err}`);
+    });
+
+function renderProjects(data) {
     const projectsContainer = document.getElementById("projects");
 
     // Find the "Photography" project
     const photographyProject = data.projects.find(project => project.name === "Photography");
 
     if (photographyProject) {
-        // Create a container for the photography project
         const projectDiv = document.createElement("div");
-        projectDiv.className = "row photography";
+        projectDiv.className = "row photo";
         projectDiv.id = photographyProject.subtitle;
 
         // Add project description
@@ -18,54 +28,62 @@ function renderPhotography(data) {
         projectDiv.innerHTML = descriptionHTML;
 
         // Create a container for the images
-        const imageContainer = document.createElement("div");
-        imageContainer.className = "image-container";
+        const photoContainer = document.createElement("div");
+        photoContainer.className = "photo-tiles";
 
+        // Loop through sections in the photography project
         photographyProject.sections.forEach(section => {
-            // Check if the section specifies an imageCount
-            if (section.imageCount) {
-                for (let i = 1; i <= section.imageCount; i++) {
-                    const imageHTML = `
-                        <div class="image-tile">
-                            <img src="./images/Photo/OneDrive_2_12-4-2024/athletics${i}.jpg" alt="${section.title} Image ${i}" class="carousel-image">
-                            <h3>${section.title}</h3>
-                            <p>${section.photo_description || ''}</p>
+            if (section.images && section.images.length > 0) {
+                // Add a section title
+                const sectionTitle = document.createElement("h2");
+                sectionTitle.textContent = section.title;
+                photoContainer.appendChild(sectionTitle);
+
+                // Loop through images in the section
+                section.images.forEach(image => {
+                    const photoHTML = `
+                        <div class="photo-tile">
+                            <img src="${image.src}" alt="${image.title}">
+                            <h3>${image.title}</h3>
+                            <p>${image.description}</p>
                         </div>`;
-                    imageContainer.innerHTML += imageHTML;
-                }
+                    photoContainer.innerHTML += photoHTML;
+                });
             }
         });
 
-        // Append the image container to the project container
-        projectDiv.appendChild(imageContainer);
+        // Append the photo container to the project div
+        projectDiv.appendChild(photoContainer);
         projectsContainer.appendChild(projectDiv);
     }
 }
 
-
-
-for(button of document.querySelectorAll("#buttons button")){ //loops through buttons in node list//
-    button.addEventListener("click", e=> { //event listener: when each button is pressed, return its value from teh HTML//
+for (const button of document.querySelectorAll("#buttons button")) {
+    button.addEventListener("click", e => {
         console.log(e.target.value);
-        sortProjects(e.target.value); //create a function//
-    })
-} 
-
-function sortProjects(button){ //allows us to press button to sort projects based on category description in json//
-    if(button == "clear"){
-        for(i=0; i<proj.projects.length; i++){
-            document.getElementById(proj.projects[i].subtitle).style.display = "flex";
-        }
-    }else if(button != undefined){
-        for(let i=0; i<proj.projects.length; i++){
-            if(proj.projects[i].category.includes(button) == true){
-                document.getElementById(proj.projects[i].subtitle).style.display = "flex"; //sets display to visible for each row//
-            }else{
-                document.getElementById(proj.projects[i].subtitle).style.display = "none"; //if category is not included, set equal to none//
-            }
-        }
-    }else{
-        console.log("error, button value is undefined");
-    }
+        sortProjects(e.target.value);
+    });
 }
 
+function sortProjects(button) {
+    if (!proj || !proj.projects) {
+        console.error("Error: Projects data is undefined.");
+        return;
+    }
+
+    if (button === "clear") {
+        proj.projects.forEach(project => {
+            document.getElementById(project.subtitle).style.display = "flex";
+        });
+    } else if (button) {
+        proj.projects.forEach(project => {
+            if (project.category && project.category.includes(button)) {
+                document.getElementById(project.subtitle).style.display = "flex";
+            } else {
+                document.getElementById(project.subtitle).style.display = "none";
+            }
+        });
+    } else {
+        console.log("Error: Button value is undefined.");
+    }
+}
