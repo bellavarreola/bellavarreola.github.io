@@ -372,34 +372,103 @@ footer {
 
 
 /* CSS FOR PHOTO PAGE */
+/* General styling for the logo */
+.logo {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
 
-.photo-tiles {
+/* Landing Section */
+
+#photo_info {
+    background-color: #134074;
+}
+
+#projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 20px;
+    padding: 20px;
+    background-color: #061a40;
+}
+
+.photo_title {
+    display: flex;
     justify-content: center;
+    color: #061a40;
+    text-align: center;
+    padding: 300px;
+}
+
+.photo_title h1 {
+    border: 2px solid #061a40;
+    padding: 100px;
+}
+
+/* Athletics photo tiles CSS */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo-tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four tiles per row */
+    gap: 20px;
+    padding: 20px;
 }
 
 .photo-tile {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    background-color: #f0ebd8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .photo-tile img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .photo-tile h3 {
-    color: red;
-} 
+    color: #134074;
+    margin: 10px 0 5px;
+    font-size: 1.5rem;
+}
 
 .photo-tile p {
-    color: red;
+    color: #061a40;
+    font-size: 0.7rem;
 }
 
-.photo-tiles h2 {
-    color: red;
+.photo-tiles h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #134074;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #134074;
+    border-top: 2px solid #134074;
+
 }
+
+

@@ -101,6 +101,52 @@
 				  }
 				],
 				"category": ["althetics"]
+			}, {
+
+			  "title": "Concerts",
+				"images": [
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert1.jpg",
+					"title": "'Groovin'",
+					"description": "Rapper vibing on stage."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert2.jpg",
+					"title": "'Reaching Out'",
+					"description": "Fans reaching out to rapper."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert3.jpg",
+					"title": "'Pose'",
+					"description": "Rapper soaking in the atmosphere."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert4.jpg",
+					"title": "'Venue'",
+					"description": "The concert with backdrop of flatirons."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert5.jpg",
+					"title": "'Stage Glow'",
+					"description": "The red glow of the stage lights illuminate the crowd."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert6.jpg",
+					"title": "'Stage'",
+					"description": "Backshot of the concert, from the view of one from the crowd."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert7.jpg",
+					"title": "'Rockin Out'",
+					"description": "Hippie Sabotage brother flipping his hair while playing guitar."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/concert8.jpg",
+					"title": "'Hippie Moon'",
+					"description": "Hippie Sabotage brother illuminated by the moonlight and fans' phone flashlights."
+				  }
+				],
+				"category": ["concerts"]
 			  }
 			]
 		  },
