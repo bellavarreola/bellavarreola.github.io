@@ -58,9 +58,9 @@
 		"sections": [
 		  {
 			"title": "Athletics",
-			"images": "/portfolio/images/Photo/OneDrive_2_12-4-2024/Athletics_Football_FamilyWeekend2024__BA (7 of 92).jpg",
+			"imageCount": 9,
 			"category": ["tangible", "networked", "participatory", "toolkit", "shape_change", "publication", "award", "support"],
-			"is_video": true
+			"photo_description": "Video highlighting places on Pearl Street while portraying a thoughtful message to students during finals week."
 		  }
 		]
 	  },

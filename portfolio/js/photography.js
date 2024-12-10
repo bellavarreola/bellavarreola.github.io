@@ -1,24 +1,49 @@
-let proj;
-fetch('../class notes/projects.json')
-    .then(response =>{
-        return response.json();
-    }).then(projects => {
-        console.log(projects);
-        proj = projects;
-        parseData(projects);
-    }).catch(err =>{
-        console.log(`error ${err}`);
-    })
+function renderPhotography(data) {
+    const projectsContainer = document.getElementById("projects");
 
-function parseData(data){
-    for(let i=0; i<data.projects.length; i++){
-    document.getElementById("projects").innerHTML += `<a href="/class notes/${data.projects[i].subtitle}.html">
-    <div class="row photo" id="${data.projects[i].subdtitle}">
-        <div class="projimg"><img src="portfolio/images/Photo/OneDrive_2_12-4-2024/athletics${i +1}.jpg"></div>
-        <div class="description"><h2>${data.projects[i].name}</h2><p class="subtitle">${data.projects[i].subtitle}</p>
-        <p>${data.projects[i].abstract}</p></div></div></a>`;
+    // Find the "Photography" project
+    const photographyProject = data.projects.find(project => project.name === "Photography");
+
+    if (photographyProject) {
+        // Create a container for the photography project
+        const projectDiv = document.createElement("div");
+        projectDiv.className = "row photography";
+        projectDiv.id = photographyProject.subtitle;
+
+        // Add project description
+        const descriptionHTML = `
+            <div class="description">
+                <p>${photographyProject.description.join(' ')}</p>
+            </div>`;
+        projectDiv.innerHTML = descriptionHTML;
+
+        // Create a container for the images
+        const imageContainer = document.createElement("div");
+        imageContainer.className = "image-container";
+
+        photographyProject.sections.forEach(section => {
+            // Check if the section specifies an imageCount
+            if (section.imageCount) {
+                for (let i = 1; i <= section.imageCount; i++) {
+                    const imageHTML = `
+                        <div class="image-tile">
+                            <img src="./images/Photo/OneDrive_2_12-4-2024/athletics${i}.jpg" alt="${section.title} Image ${i}" class="carousel-image">
+                            <h3>${section.title}</h3>
+                            <p>${section.photo_description || ''}</p>
+                        </div>`;
+                    imageContainer.innerHTML += imageHTML;
+                }
+            }
+        });
+
+        // Append the image container to the project container
+        projectDiv.appendChild(imageContainer);
+        projectsContainer.appendChild(projectDiv);
     }
 }
+
+
+
 for(button of document.querySelectorAll("#buttons button")){ //loops through buttons in node list//
     button.addEventListener("click", e=> { //event listener: when each button is pressed, return its value from teh HTML//
         console.log(e.target.value);
