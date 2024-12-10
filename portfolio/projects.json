@@ -53,13 +53,13 @@
 	  },
 	  {
 		"name": "Photography",
-		"category": ["tangible", "networked", "participatory", "toolkit", "shape_change", "publication", "award", "support"],
 		"subtitle": "photography",
 		"description": ["Psychological research has found that humans convey specific emotions (e.g., anger, fear, happiness) using social touch patterns, like squeezing a friend's arm when we are afraid."],
 		"sections": [
 		  {
-			"title": "Exhibition Walkthrough",
-			"src": "/portfolio/images/Video/OneDrive_1_12-4-2024/video4.mp4",
+			"title": "Athletics",
+			"images": "/portfolio/images/Photo/OneDrive_2_12-4-2024/Athletics_Football_FamilyWeekend2024__BA (7 of 92).jpg",
+			"category": ["tangible", "networked", "participatory", "toolkit", "shape_change", "publication", "award", "support"],
 			"is_video": true
 		  }
 		]
