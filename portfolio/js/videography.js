@@ -59,3 +59,30 @@ fetch('../portfolio/projects.json')
         }
     }
     
+
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+    
+    document.querySelector('.carousel-prev').addEventListener('click', () => {
+        moveToSlide(currentSlide - 1);
+    });
+    
+    document.querySelector('.carousel-next').addEventListener('click', () => {
+        moveToSlide(currentSlide + 1);
+    });
+    
+    function moveToSlide(index) {
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
+    
+        slides.forEach((slide, i) => {
+            slide.style.transform = `translateX(-${currentSlide * 100}%)`;
+        });
+    }
+    

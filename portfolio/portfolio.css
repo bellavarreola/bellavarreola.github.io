@@ -171,7 +171,7 @@ footer {
     box-sizing: border-box; /* Include padding and borders */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 600px;
+    width: 440px;
     flex-wrap: nowrap;
     gap: 0;
 }
@@ -182,9 +182,11 @@ footer {
     object-fit: cover; /* Maintain aspect ratio while filling the container */
 }
 
-.tile.videography img {
-    width: 168%;
+.tile.videography {
+    justify-content: center;
+
 }
+
 
 .tile:hover {
     transform: translateY(-5px); /* Slight lift on hover */
@@ -251,8 +253,6 @@ footer {
     }
 }
 
-
-    
   .tile::before {  
     content: '';  
     position: absolute;  
@@ -294,16 +294,7 @@ footer {
 }
 
 /* Landing Section */
-#landing {
-    background-color: #1f3322;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    position: relative;
-    padding: 0;
-}
+
 
 .vid_title {
     color: white;
@@ -355,3 +346,5 @@ footer {
     color: white;
     position: relative;
 }
+
+

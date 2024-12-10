@@ -12,18 +12,18 @@ fetch('../portfolio/projects.json')
 
 function parseData(data){ //to return "name" from JSON//
     for(let i=0; i<data.projects.length; i++){
-        document.getElementById("projects").innerHTML += `
-        <a href="/portfolio/${data.projects[i].name}.html">
-            <div class="tile ${data.projects[i].subtitle}" id="${data.projects[i].name}">
-                <div class="projimg">
-                    <img src="/portfolio/images/cover/cover${i + 1}.jpg" alt="${data.projects[i].name}">
-                </div>
-                <div class="title">
-                    <h2>${data.projects[i].name}</h2>
-                </div>
+    document.getElementById("projects").innerHTML += `
+    <a href="/portfolio/${data.projects[i].name}.html">
+        <div class="tile ${data.projects[i].subtitle}" id="${data.projects[i].name}">
+            <div class="projimg">
+                <img src="/portfolio/images/cover/cover${i + 1}.jpg" alt="${data.projects[i].name}">
             </div>
-        </a>`;
-    
+            <div class="title">
+                <h2>${data.projects[i].name}</h2>
+            </div>
+        </div>
+    </a>`;
+
     }
 }
 
