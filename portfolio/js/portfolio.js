@@ -12,15 +12,18 @@ fetch('../portfolio/projects.json')
 
 function parseData(data){ //to return "name" from JSON//
     for(let i=0; i<data.projects.length; i++){
-    document.getElementById("projects").innerHTML += `
+        document.getElementById("projects").innerHTML += `
         <a href="/portfolio/${data.projects[i].name}.html">
             <div class="tile ${data.projects[i].subtitle}" id="${data.projects[i].name}">
                 <div class="projimg">
-                    <img src="/portfolio/images/cover/cover${i +1}.jpg" alt="${data.projects[i].name}">
+                    <img src="/portfolio/images/cover/cover${i + 1}.jpg" alt="${data.projects[i].name}">
                 </div>
-        <div class="title">
-        <h2>${data.projects[i].name}</h2> 
-        </p></div></div>`;
+                <div class="title">
+                    <h2>${data.projects[i].name}</h2>
+                </div>
+            </div>
+        </a>`;
+    
     }
 }
 
@@ -34,14 +37,14 @@ for(button of document.querySelectorAll("#buttons button")){ //loops through but
 function sortProjects(button){ //allows us to press button to sort projects based on category description in json//
     if(button == "clear"){
         for(i=0; i<proj.projects.length; i++){
-            document.getElementById(proj.projects[i].subdomain).style.display = "flex";
+            document.getElementById(proj.projects[i].subtitle).style.display = "flex";
         }
     }else if(button != undefined){
         for(let i=0; i<proj.projects.length; i++){
             if(proj.projects[i].category.includes(button) == true){
-                document.getElementById(proj.projects[i].subdomain).style.display = "flex"; //sets display to visible for each row//
+                document.getElementById(proj.projects[i].subtitle).style.display = "flex"; //sets display to visible for each row//
             }else{
-                document.getElementById(proj.projects[i].subdomain).style.display = "none"; //if category is not included, set equal to none//
+                document.getElementById(proj.projects[i].subtitle).style.display = "none"; //if category is not included, set equal to none//
             }
         }
     }else{
