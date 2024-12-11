@@ -1,47 +1,79 @@
 let proj;
+
+// Fetch and parse JSON
 fetch('../portfolio/projects.json')
-    .then(response =>{
-        return response.json();
-    }).then(projects => {
-        console.log(projects);
+    .then(response => response.json())
+    .then(projects => {
         proj = projects;
         parseData(projects);
-    }).catch(err =>{
-        console.log(`error ${err}`);
     })
+    .catch(err => {
+        console.log(`Error: ${err}`);
+    });
 
-function parseData(data){
-    for(let i=0; i<data.projects.length; i++){
-    document.getElementById("projects").innerHTML += `<a href="/portfolio/${data.projects[i].subtitle}.html">
-    <div class="row project" id="${data.projects[i].subtitle}">
-        <div class="projimg"><img src="images/unicorns/unicorn (${i +1}).png"></div>
-        <div class="description"><h2>${data.projects[i].name}</h2><p class="subtitle">${data.projects[i].subtitle}</p>
-        <p>${data.projects[i].abstract}</p></div></div></a>`;
-    }
-}
+// Parse data and populate HTML
+function parseData(data) {
+    const designSection = data.projects.find(project => project.name.toLowerCase() === "design");
 
-for(b of document.querySelectorAll("#buttons button")){
-    b.addEventListener("click", e=>{
-        console.log(e.target.value);
-        sortProjects(e.target.value);
-    })
-}
+    if (designSection) {
+        const projectsContainer = document.getElementById("projects");
+        projectsContainer.innerHTML = ""; // Clear any existing content
 
-function sortProjects(button){
-    if(button == "clear"){
-        for(let i=0; i<proj.projects.length; i++){
-            document.getElementById(proj.projects[i].subdomain).style.display = "flex";
-        }
-    }else if(button != undefined){
-        for(let i=0; i<proj.projects.length;i++){
-            if(proj.projects[i].category.includes(button) == true){
-                document.getElementById(proj.projects[i].subdomain).style.display = "flex";
-            }else{
-                document.getElementById(proj.projects[i].subdomain).style.display = "none";
+        // Populate only the "design" section
+        for (let section of designSection.sections) {
+            const category = section.category;
+            const title = section.title.replace(/\s+/g, '-').toLowerCase(); // Unique ID for the section
+
+            // Create a container for each project
+            let projectHTML = `
+                <div class="row project" id="${title}" data-category="${category}">
+                    <div class="projimg">`;
+
+            // Loop through the image array and append image tags
+            for (let imgSrc of section.image) {
+                projectHTML += `<img src="${imgSrc}" alt="${section.title} image">`;
             }
-        }
-    }else{
-        console.log("error, button value is undefined");
-    }
 
+            projectHTML += `
+                    </div>
+                    <div class="description">
+                        <h2>${section.title}</h2>
+                    </div>
+                </div>`;
+
+            // Add the project to the container
+            projectsContainer.innerHTML += projectHTML;
+        }
+    } else {
+        console.log("Design section not found in JSON.");
+    }
+}
+
+// Event listeners for buttons
+document.querySelectorAll("#buttons button").forEach(button => {
+    button.addEventListener("click", e => {
+        const category = e.target.value;
+        sortProjects(category);
+    });
+});
+
+// Filter projects by category
+function sortProjects(category) {
+    const projects = document.querySelectorAll("#projects .project");
+
+    if (category === "clear") {
+        // Show all projects
+        projects.forEach(project => {
+            project.style.display = "flex";
+        });
+    } else {
+        // Show only projects matching the category, hide others
+        projects.forEach(project => {
+            if (project.dataset.category === category) {
+                project.style.display = "flex";
+            } else {
+                project.style.display = "none";
+            }
+        });
+    }
 }

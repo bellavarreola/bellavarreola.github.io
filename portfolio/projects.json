@@ -198,14 +198,21 @@
 		"description": ["Sensory extensions enhance our awareness by transforming variations in stimuli normally undetectable by human senses into perceivable outputs."],
 		"sections": [
 		  {
-			"title": "Sensory Extensions Overview",
-			"src": "portfolio/images/Video/OneDrive_1_12-4-2024/video5.mp4",
-			"is_video": true
+			"title": "Accordian Book",
+			"category": "book",
+			"image": ["./images/Design/accordianbook1.jpg", "./images/Design/accordianbook2.jpg"]
 		  },
 		  {
-			"title": "Interactive Simulations",
-			"src": "portfolio/images/Video/OneDrive_1_12-4-2024/video6.mp4",
-			"is_video": true
+			"title": "Poster Mailer",
+			"category": "poster",
+			"image": ["./images/Design/postermailer1.jpg", "./images/Design/postermailer2.jpg"]
+
+		  },
+		  {
+			"title": "Type Specimen",
+			"category": "poster",
+			"image": ["./images/Design/TypeSpecimenPoster.jpg"]
+
 		  }
 		]
 	  }
