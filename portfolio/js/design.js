@@ -18,6 +18,7 @@ function parseData(data) {
     if (designSection) {
         const projectsContainer = document.getElementById("projects");
         projectsContainer.innerHTML = ""; // Clear any existing content
+        
 
         // Populate only the "design" section
         for (let section of designSection.sections) {
@@ -76,4 +77,5 @@ function sortProjects(category) {
             }
         });
     }
+    
 }
