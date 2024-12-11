@@ -58,6 +58,7 @@
 		"sections": [
 			{
 				"title": "Athletics",
+				"category": "athletics",
 				"images": [
 				  {
 					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics1.jpg",
@@ -99,11 +100,11 @@
 					"title": "'Flag Wave'",
 					"description": "Ralphie Runner waving the CU flag at field corner."
 				  }
-				],
-				"category": "althetics"
+				]
 			}, {
 
 			  "title": "Concerts",
+			  "category": "concerts",
 				"images": [
 				  {
 					"src": "./images/Photo/OneDrive_2_12-4-2024/concert1.jpg",
@@ -145,10 +146,10 @@
 					"title": "'Hippie Moon'",
 					"description": "Hippie Sabotage brother illuminated by the moonlight and fans' phone flashlights."
 				  }
-				],
-				"category": "concerts"
+				]
 			  }, {
 				"title": "Students",
+				"category": "students",
 				"images": [
 				  {
 					"src": "./images/Photo/OneDrive_2_12-4-2024/students1.jpg",
@@ -169,6 +170,7 @@
 			  },
 			  {
 				"title": "Cars",
+				"category": "cars",
 				"images": [
 				  {
 					"src": "./images/Photo/OneDrive_2_12-4-2024/car1.jpg",
