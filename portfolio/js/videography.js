@@ -1,7 +1,7 @@
 fetch('../portfolio/projects.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data); // For debugging
+        console.log(data); 
         renderProjects(data);
         setupCarousel();
     })

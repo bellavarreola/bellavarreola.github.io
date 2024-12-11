@@ -17,13 +17,13 @@ function parseData(data) {
 
     if (designSection) {
         const projectsContainer = document.getElementById("projects");
-        projectsContainer.innerHTML = ""; // Clear any existing content
+        projectsContainer.innerHTML = ""; 
         
 
         // Populate only the "design" section
         for (let section of designSection.sections) {
             const category = section.category;
-            const title = section.title.replace(/\s+/g, '-').toLowerCase(); // Unique ID for the section
+            const title = section.title.replace(/\s+/g, '-').toLowerCase(); 
 
             // Create a container for each project
             let projectHTML = `
@@ -63,7 +63,6 @@ function sortProjects(category) {
     const projects = document.querySelectorAll("#projects .project");
 
     if (category === "clear") {
-        // Show all projects
         projects.forEach(project => {
             project.style.display = "flex";
         });

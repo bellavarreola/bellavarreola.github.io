@@ -2,7 +2,6 @@
 	"projects": [
 	  {
 		"name": "Videography",
-		"category": ["tangible", "networked", "participatory", "publication", "lead", "methods"],
 		"subtitle": "videography",
 		"description": ["From student interviews to aerial drone footage, Annabella gathers video around campus and at university events. These videos can be found on various CU Instagram pages, @CUBOULDERLIFE being the most common channel Annabella produces for."],
 		"sections": [
@@ -12,6 +11,7 @@
 			"video": true,
 			"vid_description": "Video romantacizing the fall season in Boulder.",
 			"colorClass": "bg-blue"
+
 		},
 		  {
 			"title": "Wes Anderson",

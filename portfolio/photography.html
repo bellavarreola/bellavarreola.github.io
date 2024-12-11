@@ -24,16 +24,9 @@
         <button class="carousel-control next">&gt;</button>
     </div>
 
-    <div id="buttons">
-        <button type="button" value="athletics">Athletics</button>
-        <button type="button" value="concerts">Concerts</button>
-        <button type="button" value="students">Students</button>
-        <button type="button" value="cars">Cars</button>
-        <button type="button" value="clear">Clear</button>
-    </div>
 
     <div id="gallery">
-        <!-- Image tiles will be dynamically populated here -->
+        
     </div>
     
     
@@ -56,21 +49,21 @@
         let currentIndex = 0;
     
         function updateCarousel() {
-            const offset = -currentIndex * 100; // Move container by a percentage based on index
+            const offset = -currentIndex * 100; 
             carouselImages.style.transform = `translateX(${offset}%)`;
         }
     
         nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % images.length; // Loop to start when reaching the end
+            currentIndex = (currentIndex + 1) % images.length; 
             updateCarousel();
         });
     
         prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length; // Loop back when at the beginning
+            currentIndex = (currentIndex - 1 + images.length) % images.length; 
             updateCarousel();
         });
     
-        // Adjust carousel on window resize to handle responsive behavior
+        
         window.addEventListener('resize', updateCarousel);
     </script>
     

@@ -2,8 +2,8 @@ let proj;
 fetch('../portfolio/projects.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data); // For debugging
-        proj = projects; // Store the data globally for access in sortProjects
+        console.log(data); 
+        proj = projects; 
         renderProjects(data); // Render only the photography project initially
     })
     .catch(err => {
@@ -12,7 +12,7 @@ fetch('../portfolio/projects.json')
 
 function renderProjects(data) {
     const projectsContainer = document.getElementById("projects");
-    projectsContainer.innerHTML = ''; // Clear existing projects
+    projectsContainer.innerHTML = ''; 
 
     // Find the "Photography" project
     const photographyProject = data.projects.find(project => project.name === "Photography");
@@ -54,28 +54,3 @@ function renderProjects(data) {
 }
 
 
-for(button of document.querySelectorAll("#buttons button")){
-    button.addEventListener("click", e=>{
-        console.log(e.target.value);
-        sortProjects(e.target.value);
-    })
-}
-
-function sortProjects(button){
-    if(button == "clear"){
-        for(let i=0; i<proj.projects.length; i++){
-            document.getElementById(proj.projects[i].subtitle).style.display = "flex";
-        }
-    }else if(button != undefined){
-        for(let i=0; i<proj.projects.length;i++){
-            if(proj.projects[i].category.includes(button) == true){
-                document.getElementById(proj.projects[i].subtitle).style.display = "flex";
-            }else{
-                document.getElementById(proj.projects[i].subtitle).style.display = "none";
-            }
-        }
-    }else{
-        console.log("error, button value is undefined");
-    }
-
-}
