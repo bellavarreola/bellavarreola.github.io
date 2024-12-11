@@ -87,3 +87,4 @@ function sortProjects(button) {
         console.log("Error: Button value is undefined.");
     }
 }
+

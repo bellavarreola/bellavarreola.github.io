@@ -462,14 +462,66 @@ footer {
     width: 100%;
     font-size: 2rem;
     font-weight: bold;
-    color: #134074;
+    color: #8DA9C4;
     padding: 20px 0;
     margin-bottom: 20px;
     text-transform: uppercase;
-    border-bottom: 2px solid #134074;
-    border-top: 2px solid #134074;
+    border-bottom: 2px solid #8DA9C4;
+    border-top: 2px solid #8DA9C4;
 
 }
+
+/* carousel for photo page */
+.image-carousel {
+    position: relative;
+    width: 90%; /* Use 100% width so it stretches to the full width of the container */
+    max-width: 300px;
+    margin: 0 auto; /* Auto margins will center the carousel */
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 0px;
+    height: 475px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%; /* Each image takes the full width of the container */
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f0ebd8;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    border-radius: 0%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 
 
 

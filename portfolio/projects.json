@@ -85,12 +85,12 @@
 					"description": "Shedeur Sanders showing his focused game-face."
 				  },
 				  {
-					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics6.jpg",
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics7.jpg",
 					"title": "'Hunter Embrace'",
 					"description": "Travis Hunter hugging loved ones in stands after win."
 				  },
 				  {
-					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics7.jpg",
+					"src": "./images/Photo/OneDrive_2_12-4-2024/athletics6.jpg",
 					"title": "'Sko Buffs'",
 					"description": "Cheerleader getting the crowd excited for the game."
 				  },
@@ -100,7 +100,7 @@
 					"description": "Ralphie Runner waving the CU flag at field corner."
 				  }
 				],
-				"category": ["althetics"]
+				"category": "althetics"
 			}, {
 
 			  "title": "Concerts",
@@ -146,7 +146,46 @@
 					"description": "Hippie Sabotage brother illuminated by the moonlight and fans' phone flashlights."
 				  }
 				],
-				"category": ["concerts"]
+				"category": "concerts"
+			  }, {
+				"title": "Students",
+				"images": [
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/students1.jpg",
+					"title": "'Worm'",
+					"description": "Student showing off his worm in the middle of a dance circle."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/students2.jpg",
+					"title": "'Decked Out'",
+					"description": "A decked out fan in the stands at a game."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/students3.jpg",
+					"title": "'SKO'",
+					"description": "A student yelling from the stands."
+				  }
+				]
+			  },
+			  {
+				"title": "Cars",
+				"images": [
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/car1.jpg",
+					"title": "'Landscape'",
+					"description": "Wide shot of Ferrari 458 with Flatirons."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/car2.jpg",
+					"title": "'Body'",
+					"description": "Body shot of Ferrari with Flatirons."
+				  },
+				  {
+					"src": "./images/Photo/OneDrive_2_12-4-2024/car3.jpg",
+					"title": "'Narrow'",
+					"description": "Narrow shot of Ferrari with Flatirons."
+				  }
+				]
 			  }
 			]
 		  },
